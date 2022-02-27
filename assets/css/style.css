@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Josefin+Slab:wght@500&display=swap');
 
+
+/* General page stylings */
+
 * {
     margin: 0;
     padding: 0;
     border: none;
+    
 }
 
 body {
@@ -22,15 +26,14 @@ a {
     color: inherit;
 }
 
+/* Header stylings*/
+
 header {
     background: url('../images/skier.jpeg') no-repeat bottom right;
     height: 600px;
     width: 100%;
     background-size: cover;
-    overflow: hidden;
-    box-sizing: border-box;
-    
-
+ 
 }
 
 header h1, header li {
@@ -84,8 +87,6 @@ border-bottom: 1px solid grey;
 header nav {
     float: right;
     width: 35%;
-
-
 }
 
 #logo-nav-container ul {
@@ -97,21 +98,62 @@ header nav {
     }
 li {
     list-style-type: none;
+    opacity: 0.8;
 }
 
 #logo-nav-container a {
     display: flex;
 }
 
+
+
 nav a:hover {
-   text-decoration: underline ;
+    border-bottom: 1px solid whitesmoke;
+    opacity: 1;
 }
 
+.active li {
+    opacity: 1;
+    color: white;
+    border-bottom: 1px solid whitesmoke;
+
+}
 /* temporary styling to view text in white*/
 section, footer {
     background: blue;
 }
 
+.motto-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.motto-container h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.5em;
+    font-size: 250%;
+ 
+}
 
+/* Responsive layout for header on smaller screens */
 
+@media screen and (max-width:900px) { 
+    #logo-nav-container {
+        height: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #logo-nav-container > * {
+        justify-self: center;
+    }
+
+    #logo-nav-container nav {
+        width: 90%
+    }
+}
