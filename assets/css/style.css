@@ -36,10 +36,6 @@ header {
  
 }
 
-header h1, header li {
-    vertical-align: text-bottom;
-}
-
 #header-overlay {
     top: 0;
     left: 0;
@@ -156,4 +152,62 @@ section, footer {
     #logo-nav-container nav {
         width: 90%
     }
+}
+/* 
+Aim and history section */
+
+section {
+    height: 600px;
+    
+}
+
+#aim-and-history-section {
+    background: url('../images/skicrosshome2.jpeg');
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.image-overlay {
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(7, 1, 20);
+    opacity: 0.75;
+    z-index: 1;
+    position: absolute;
+}
+
+.section-text {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    
+}
+
+#aim, #history {
+    align-self: center;
+    line-height: 175%;
+    height: 150px;
+}
+
+#aim h3, #history h3 {
+    font-size: 160%;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+#aim p, #history p {
+    margin-top: 5px;
 }
