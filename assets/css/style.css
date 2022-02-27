@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
     
 }
 
@@ -114,10 +115,7 @@ nav a:hover {
     border-bottom: 1px solid whitesmoke;
 
 }
-/* temporary styling to view text in white*/
-section, footer {
-    background: blue;
-}
+
 
 .page-title-text-container  {
     height: 500px;
@@ -157,7 +155,7 @@ section, footer {
 Aim and history section */
 
 section {
-    margin-top: 10px; /*added for clear distinction temporarily */
+    /* margin-top: 10px; added for clear distinction temporarily */
     height: 600px;
     position: relative;
     
@@ -169,6 +167,7 @@ section {
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: scroll;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -181,7 +180,7 @@ section {
     height: 600px;
     width: 100%;
     background-color: rgb(7, 1, 20);
-    opacity: 0.75;
+    opacity: 0.6;
     z-index: 1;
     position: absolute;
 }
@@ -232,12 +231,55 @@ section {
 
 }
 
+/* 
+responsive layout for aim and history section */
+
+@media screen and (max-width:750px){
+    .two-column-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;   
+    }
+
+    #aim, #history {
+        padding: 15px;
+        height: 50%;
+        align-self: flex-start;
+    }
+    
+    #aim:before, #history:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #aim, #history {
+      line-height: 120%;
+      padding: 15px;
+      height: 50%;
+      font-size: 95%;
+    }
+
+    #aim p, #history p {
+        margin-top: 5px;
+    
+    }
+}
 
 /* visual links section */
 
 #visual-nav-links {
-    height: 300px;
+    height: 400px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/skier-jump.jpg');
+   padding: 50px 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding
 
 }
 
@@ -245,37 +287,34 @@ section {
 
 .visual-link-background-image {
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
     height: 300px;
-    width: 100%;
+    width: 300px;
 
 }
-/* 
-.visual-link-overlay {
+
+
+.visual-links-container {
     position: absolute;
-    background-color: rgb(7, 1, 20);
-    opacity: 0.6;
-    height: 100%;
-    width: 100%;
-    top: 0;
-} */
-
-.three-column-grid-container {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 2;
+    display: flex;
     width: 100%;
     height: 300px;
-    border: 1px solid white;
+    justify-content: space-around;
+
 }
 
-.grid-container-item {
+.visual-links-item {
     position: relative;
     display: flex;
     justify-content: center;
     filter: grayscale(0.7);
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 300px;
+    height: 300px;
+
 
 
 }
@@ -291,15 +330,91 @@ section {
     padding: 20px;
     background: whitesmoke;
     color: black;
+    font-size: 120%;
+    font-weight: 600;
 }
 
-.grid-container-item:hover {
+.visual-links-item:hover {
     filter: none;
     transition: all 1s ease-in-out;
 }
+/* 
+responsive design for visual links section */
+
+
+@media screen and (max-width:950px){
+    .visual-link-background-image {
+
+        object-fit: cover;
+        height: 245px;
+        width: 245px;
+    
+    }
+
+    .visual-links-item {
+        width: 245px;
+        height: 245px;
+    
+    }
+}
+
+    @media screen and (max-width:750px) {
+        #visual-nav-links {
+            height: 600px;
+        }
+        
+     .visual-links-container {
+         flex-wrap:wrap;
+     }   
+    .visual-links-item {
+        margin: 5px;
+    }
+
+    @media screen and (max-width:550px) {
+        #visual-nav-links {
+            height: 900px;
+        }
+        
+     .visual-links-container {
+         flex-wrap: wrap;
+     }   
+    .visual-links-item {
+        margin: 10px;
+    }
+
+    #visual-nav-links .image-overlay {
+        height: 100%;
+    }
+    
+    }
 
 /* footer  */
 
 footer {
     height: 80px;
+}
+
+.social-media {
+    
+    color: black;
+    margin: 0 50px;
+height: 100%;
+display: flex;
+align-items: center;}
+
+.social-media ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ 
+}
+
+.social-media i {
+    font-size: 250%;
+    color:rgb(7, 1, 20);
+}
+
+.social-media li:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
