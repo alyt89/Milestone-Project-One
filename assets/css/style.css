@@ -177,7 +177,7 @@ section {
 .image-overlay {
     top: 0;
     left: 0;
-    height: 600px;
+    height: 100%;
     width: 100%;
     background-color: rgb(7, 1, 20);
     opacity: 0.6;
@@ -369,6 +369,7 @@ responsive design for visual links section */
     .visual-links-item {
         margin: 5px;
     }
+}
 
     @media screen and (max-width:550px) {
         #visual-nav-links {
@@ -390,28 +391,20 @@ responsive design for visual links section */
 
 /* footer  */
 
-footer {
-    height: 80px;
-}
-
 .social-media {
-    
-    color: black;
-    margin: 0 50px;
-height: 100%;
-display: flex;
-align-items: center;}
-
-.social-media ul {
+    min-height: 80px;
+    color:rgb(7, 1, 20);
     display: flex;
-    width: 100%;
-    justify-content: space-around;
- 
+    align-items: center;
 }
 
-.social-media i {
-    font-size: 250%;
-    color:rgb(7, 1, 20);
+.social-media ul {display: flex;
+justify-content: space-around;
+width: 80%;
+margin: 0 auto}
+
+.social-media li {
+    font-size: 2em;
 }
 
 .social-media li:hover {
