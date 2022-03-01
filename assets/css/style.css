@@ -155,13 +155,12 @@ nav a:hover {
 Aim and history section */
 
 section {
-    /* margin-top: 10px; added for clear distinction temporarily */
     height: 600px;
     position: relative;
     
 }
 
-#aim-and-history-section {
+#aim-and-history-section, #events-section {
     background: url('../images/skicrosshome2.jpeg');
     height: 600px;
     width: 100%;
@@ -279,7 +278,7 @@ responsive layout for aim and history section */
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    padding
+
 
 }
 
@@ -410,4 +409,14 @@ margin: 0 auto}
 .social-media li:hover {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
+}
+
+/* 
+events page */
+.black-text {color: black;
+font-weight: 600;}
+
+.events-container {
+    position: absolute;
+    z-index: 2;
 }
