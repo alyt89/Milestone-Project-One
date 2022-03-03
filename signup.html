@@ -52,62 +52,35 @@
 
 </header>
     
-<section id="aim-and-history-section">
-    <div class="image-overlay"></div>
-    <div class="section-text two-column-grid">
-        <div id="aim">
-            <h3>Our Aim</h3>
-            <p>We want to spread the word about Ski Cross and give people of all ages all across the UK the chance to experience the thrill of the sport.</p>
+<div id="signup-form-container">
+    <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" class="text-input" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" class="text-input" required>
+        <label for="email">Email</label>
+        <input type="text" id="email" class="text-input" required>
+        <p>Which event are you interested in?<p>
+        <label for="london">London</label>
+        <input type="checkbox" id="london" name="location-preference" value="london">
+        <label for="manchester">manchester</label>
+        <input type="checkbox" id="manchester" name="location-preference" value="manchester">
+        <label for="birmingham">Birmingham</label>
+        <input type="checkbox" id="birmingham" name="location-preference" value="birmingham">
+        <label for="edinburgh">Edinburgh</label>
+        <input type="checkbox" id="edinburgh" name="location-preference" value="edinburgh">
+        <label for="age">How old are you?</label>
+
+        <select name="age" id="age">
+            <option value="under18">Under 18</option>
+            <option value="18-25">18-25</option>
+            <option value="25-30">25-30</option>
+            <option value="30-40">40-50</option>
+            <option value="50plus">50+</option>
+        </select>
         
-            <p>Skiing can be an expensive sport and we want everyone to feel included so we have a range of equipment to offer to those who attend our events.</p>
-        </div>
-  
-        <div id="history">
-            <h3>  Our History</h3>
-            <p>Established in 2018 after the success of Team GB in the Winter Olympics we held our first event in London.</p>
-        
-            <p>Since then we have held 30 events allowing people to discover this amazing sport reaching out to around 3,000 people at 5 different locations across the country.
-            </p></div>
-       
-    </div>
-
-
-</section>
-<section id="visual-nav-links">
-
-
-    <div class="visual-links-container ">
-        <div class="visual-links-item">
-           <!-- <div class="visual-link-background-image" style="background-image: url('/assets/images/skicross-events.jpg');"></div> -->
-           <div>
-            <a href="events.html"> <img class="visual-link-background-image" src="/assets/images/skicross-events.jpg" alt="group of skiers smiling in formation link to events page"></a>
-           </div>
-            <div class="grid-item-text">
-               <div>
-                 <p>See our upcoming events</p>
-                </div> 
-            </div>
-        </div>
-         <div class="visual-links-item">
-            <a href="gallery.html"> <img class="visual-link-background-image" src="/assets/images/skicross-gallery.jpg" alt="three skiers racing together link to gallery page"></a>
-            <div class="grid-item-text">
-                <div>
-               <p>View our gallery</p> 
-                 </div> 
-             </div>
-        </div>
-        <div class="visual-links-item">
-            <a href="events.html"> <img class="visual-link-background-image" src="/assets/images/skicross-signup.jpeg" alt="ski instructor with group of children in ski class, link to sign up form"> </a>
-            <div class="grid-item-text">
-                <div>
-                   <p>Sign up to our mailing list</p>
-                    </div> 
-             </div>
-        </div>
-       
-
-    </div>
-</section>
+    </form>
+</div>
 
 
 

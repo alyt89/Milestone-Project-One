@@ -119,10 +119,11 @@ nav a:hover {
 
 .page-title-text-container  {
     height: 500px;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:45px;
 }
 
 .page-title-text-container h2 {
@@ -130,8 +131,60 @@ nav a:hover {
     text-transform: uppercase;
     font-weight: 500;
     padding: 0.5em;
-    font-size: 250%;
- 
+    font-size: 300%;
+}
+
+#title-animation {
+    transform: scale(1.1);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+
+  #title-animation span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+/* 
+css animation for title animation from https://codepen.io/alvarotrigo/pen/ExvqdNa?editors=1100 */
+
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
 }
 
 /* Responsive layout for header on smaller screens */
@@ -151,18 +204,28 @@ nav a:hover {
         width: 90%
     }
 }
+
+@keyframes title-appear {
+
+    0% {transform: translateX(-600px);
+
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 /* 
 Aim and history section */
 
-section {
+/* section {
     height: 600px;
     position: relative;
     
-}
+} */
 
-#aim-and-history-section, #events-section {
+#aim-and-history-section, #events-section, #events-details-section, #gallery-section {
     background: url('../images/skicrosshome2.jpeg');
-    height: 600px;
+    min-height: 600px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -170,6 +233,7 @@ section {
     background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
  
 }
 
@@ -272,7 +336,7 @@ responsive layout for aim and history section */
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: url('../images/skier-jump.jpg');
+    background: rgb(45 44 46 / 70%);
    padding: 50px 0;
     width: 100%;
     background-repeat: no-repeat;
@@ -419,4 +483,63 @@ font-weight: 600;}
 .events-container {
     position: absolute;
     z-index: 2;
+}
+
+/* Gallery page */
+
+#gallery-photos {
+    width: 85%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+ 
+    /* background-position: bottom center;
+    background-repeat: no-repeat;
+    width: 100%; */
+
+}
+.gallery-content {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background: url('../images/skicrosshome2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#gallery-photos div {
+    margin: 10px;
+    overflow: hidden;
+
+}
+
+#gallery-photos img {
+    height:250px;
+    width: 250px;
+    object-fit: cover;
+
+}
+
+
+/* 
+sign up form */
+
+#signup-form-container form {
+    /* color: black !important; */
+    background-color: blue;
+    max-width: 500px;
+    padding: 20px;
+}
+
+label, input{
+    margin: 5px;
+    width: 100%;
 }
