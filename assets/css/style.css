@@ -218,11 +218,7 @@ css animation for title animation from https://codepen.io/alvarotrigo/pen/ExvqdN
 /* 
 Aim and history section */
 
-/* section {
-    height: 600px;
-    position: relative;
-    
-} */
+
 
 #aim-and-history-section, #events-details-section, #gallery-section {
     background: url('../images/skicrosshome2.jpeg');
@@ -330,22 +326,47 @@ responsive layout for aim and history section */
     }
 }
 
+/* ski cross description section */
+
+#skicross-description {
+    min-height: 400px;
+    padding: 50px 20px;
+}
+
+
+#skicross-description div {
+    color:rgb(7, 1, 20);
+    border: 1px solid rgb(7, 1, 20, 0.8);
+    padding: 50px 20px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: rgb(7, 1, 20, 0.1);
+}
+
+#skicross-description h3 {
+    text-transform: uppercase;
+    font-size: 250%;
+    font-weight: 300;
+}
+
+#skicross-description p {
+    font-weight: 700;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+
 /* visual links section */
 
 #visual-nav-links {
-    height: 400px;
-    width: 100%;
     position: relative;
-    overflow: hidden;
-    background: rgb(45 44 46 / 70%);
-   padding: 50px 0;
+    background-image: url(../images/mountains.jpg);
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
     background-size: cover;
-
-
+    background-position: bottom;
+    padding: 50px 10px;
 }
+
 
 
 
@@ -359,12 +380,13 @@ responsive layout for aim and history section */
 
 
 .visual-links-container {
-    position: absolute;
+    position: relative;
     z-index: 2;
     display: flex;
     width: 100%;
     height: 300px;
     justify-content: space-around;
+    filter: none;
 
 }
 
@@ -476,6 +498,23 @@ margin: 0 auto}
     transition: all 0.5s ease-in-out;
 }
 
+#facebook {
+    color: blue;
+}
+
+#instagram {
+   
+    background: -webkit-linear-gradient(rgb(153, 103, 46), rgb(95, 30, 116));
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    
+}
+
+#youtube {
+    color: #ff0000;
+}
 /* 
 events page */
 
