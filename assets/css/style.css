@@ -365,7 +365,7 @@ responsive layout for aim and history section */
     width: 100%;
     background-size: cover;
     background-position: bottom;
-    padding: 50px 10px;
+    padding: 100px 10px;
 }
 
 
@@ -415,7 +415,7 @@ responsive layout for aim and history section */
 
 .grid-item-text p {
     padding: 20px;
-    background: whitesmoke;
+    background: rgb(245, 245, 245, 0.85);
     color: black;
     font-size: 120%;
     font-weight: 600;
@@ -447,7 +447,7 @@ responsive design for visual links section */
 
     @media screen and (max-width:750px) {
         #visual-nav-links {
-            height: 600px;
+            height: 650px;
         }
         
      .visual-links-container {
@@ -455,6 +455,10 @@ responsive design for visual links section */
      }   
     .visual-links-item {
         margin: 5px;
+    }
+
+    #visual-nav-links {
+        padding-bottom: 10px;
     }
 }
 
@@ -549,17 +553,29 @@ events page */
     text-transform: uppercase;
     font-size: 105%;
     font-weight: 800;
+    padding-top: 5px;
 }
 
 .single-event-info p:nth-of-type(1) {
     text-transform: uppercase;
     font-size: 110%;
+    border-bottom: 1px solid whitesmoke;
+    width: 20%;
+    margin: 0 auto;
+    padding-bottom: 3px;
 }
 
 .single-event-info h3 {
     font-size: 200%;
     padding: 2px;
+    text-transform: uppercase;
 }
+
+.single-event-info h4 {
+    text-transform: uppercase;
+    font-size: 125%;
+}
+
 
 /* responsive design for events page */
 
