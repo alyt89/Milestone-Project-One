@@ -335,7 +335,7 @@ responsive layout for aim and history section */
 }
 
 
-#skicross-description div {
+.page-description div {
     color:rgb(7, 1, 20);
     border: 1px solid rgb(7, 1, 20, 0.8);
     padding: 50px 20px;
@@ -344,13 +344,13 @@ responsive layout for aim and history section */
     background-color: rgb(7, 1, 20, 0.1);
 }
 
-#skicross-description h3 {
+.page-description h3 {
     text-transform: uppercase;
     font-size: 250%;
     font-weight: 300;
 }
 
-#skicross-description p {
+.page-description p {
     font-weight: 700;
     font-size: 120%;
     margin-bottom: 10px;
@@ -576,6 +576,14 @@ events page */
     font-size: 125%;
 }
 
+#events-basics {
+    padding: 40px 20px;
+}
+
+#events-basics a {
+    text-decoration: underline;
+    color: rgb(7, 1, 20, 0.8) ;
+}
 
 /* responsive design for events page */
 
