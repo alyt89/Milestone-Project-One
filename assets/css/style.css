@@ -335,7 +335,7 @@ responsive layout for aim and history section */
 }
 
 
-.page-description div {
+.page-description > div {
     color:rgb(7, 1, 20);
     border: 1px solid rgb(7, 1, 20, 0.8);
     padding: 50px 20px;
@@ -583,6 +583,26 @@ events page */
 #events-basics a {
     text-decoration: underline;
     color: rgb(7, 1, 20, 0.8) ;
+}
+
+#events-basics h4 {
+    font-size: 130%;
+}
+
+#events-basics .events-basics-grid {
+    margin-top: 20px;
+    border: none;
+    background: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.events-basics-grid div {
+    padding: 5px 30px;
+}
+
+
+.events-basics-grid div:nth-of-type(2) {
+    border-left: 1px solid rgb(7, 1, 20);
 }
 
 /* responsive design for events page */
