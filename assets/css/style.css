@@ -722,5 +722,5 @@ input {
 
 #location input {
     place-self: start;
-    width: min-content;
+    width: auto;
 }
