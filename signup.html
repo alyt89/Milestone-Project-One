@@ -51,7 +51,9 @@
     </div>  
 
 </header>
-    
+
+<section id="signup-form-section">
+<div class="image-overlay"></div>
 <div id="signup-form-container">
     <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
         <label for="fname">First Name</label>
@@ -60,15 +62,20 @@
         <input type="text" id="lname" class="text-input" required>
         <label for="email">Email</label>
         <input type="text" id="email" class="text-input" required>
-        <p>Which event are you interested in?<p>
+        <p>Which event are you interested in?</p>
+        <div id="location">
         <label for="london">London</label>
         <input type="checkbox" id="london" name="location-preference" value="london">
+        
         <label for="manchester">manchester</label>
         <input type="checkbox" id="manchester" name="location-preference" value="manchester">
+    
         <label for="birmingham">Birmingham</label>
         <input type="checkbox" id="birmingham" name="location-preference" value="birmingham">
+        
         <label for="edinburgh">Edinburgh</label>
         <input type="checkbox" id="edinburgh" name="location-preference" value="edinburgh">
+        </div>
         <label for="age">How old are you?</label>
 
         <select name="age" id="age">
@@ -78,9 +85,12 @@
             <option value="30-40">40-50</option>
             <option value="50plus">50+</option>
         </select>
+
+        <input type="submit" value="submit">
         
     </form>
 </div>
+</section>
 
 
 

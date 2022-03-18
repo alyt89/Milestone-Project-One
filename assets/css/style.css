@@ -221,7 +221,7 @@ Aim and history section */
 
 
 
-#aim-and-history-section, #events-details-section, #gallery-section {
+#aim-and-history-section, #events-details-section, #gallery-section, #signup-form-section {
     background: url('../images/skicrosshome2.jpeg');
     min-height: 600px;
     width: 100%;
@@ -585,8 +585,22 @@ events page */
     color: rgb(7, 1, 20, 0.8) ;
 }
 
+#events-basics li {
+    color: rgb(7, 1, 20) ;
+    font-weight: 600;
+}
+
+
 #events-basics h4 {
-    font-size: 130%;
+    font-size: 120%;
+    font-weight: 600;
+    margin: 15px 0;
+
+}
+
+#events-basics h5 {
+    font-size: 110%;
+    font-weight: 700;
 }
 
 #events-basics .events-basics-grid {
@@ -598,6 +612,7 @@ events page */
 }
 .events-basics-grid div {
     padding: 5px 30px;
+
 }
 
 
@@ -672,14 +687,40 @@ events page */
 /* 
 sign up form */
 
+#signup-form-container {
+    position:absolute;
+    z-index: 2;
+    padding: 50px;
+    color:rgb(7, 1, 20);
+    font-size: larger;
+}
+
 #signup-form-container form {
     /* color: black !important; */
-    background-color: blue;
-    max-width: 500px;
+    background-color: rgb(245, 245, 245, 0.6);
+    max-width: 800px;
     padding: 20px;
 }
 
-label, input{
-    margin: 5px;
+label{
+    margin: 10px;
     width: 100%;
+    vertical-align: center;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    background: rgb(245, 245, 245, 0.6);
+    margin: 10px 0;
+}
+
+#location {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#location input {
+    place-self: start;
+    width: min-content;
 }
