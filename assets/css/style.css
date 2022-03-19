@@ -87,7 +87,6 @@ header nav {
 }
 
 #logo-nav-container ul {
-    /* line-height: 80px; */
         display: flex;
         justify-content: space-between;
         font-size: 130%;
@@ -203,6 +202,16 @@ css animation for title animation from https://codepen.io/alvarotrigo/pen/ExvqdN
     }
 }
 
+@keyframes title-appear {
+
+    0% {transform: translateX(-600px);
+
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 /* Responsive layout for header on smaller screens */
 
 @media screen and (max-width:900px) { 
@@ -221,15 +230,19 @@ css animation for title animation from https://codepen.io/alvarotrigo/pen/ExvqdN
     }
 }
 
-@keyframes title-appear {
-
-    0% {transform: translateX(-600px);
-
-    }
-    100% {
-        transform: translateX(0px);
+@media screen and (max-width:900px) {
+    .page-title-text-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
     }
 }
+
+
 /* 
 Aim and history section */
 
@@ -708,7 +721,7 @@ sign up form */
 #signup-form-container {
     z-index: 2;
     padding: 70px;
-    color:rgb(7, 1, 20);
+    color:rgb(7, 1, 20,0.85);
     font-size: large;
     font-weight: 600;
 }
@@ -759,7 +772,9 @@ input[type=submit] {
     height:40px;
     background: rgb(245, 245, 245, 0.9);
     font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
  }
 
  form h5 {text-align: center;
-margin-top: 5px;}
+margin-top: 20px;}
