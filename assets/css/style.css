@@ -764,7 +764,13 @@ form p, form label[for=age] {
 
 form select {width: 80px;
 height: 30px;
-align-self: center;}
+align-self: center;
+opacity: 0.8;}
+
+form option {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
 
 
 input[type=submit] {
