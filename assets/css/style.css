@@ -127,13 +127,27 @@ nav a:hover {
     padding: 45px;
     margin: 0 auto;
 }
+.page-title-text-container * {
+    text-align: center;
+    font-style: italic;
+}
 
 .page-title-text-container h2 {
-    font-style: italic;
+    
     text-transform: uppercase;
     font-weight: 500;
     padding: 0.5em;
     font-size: 300%;
+    margin-bottom: 80px;
+}
+
+#title-animation h2 {
+    margin-bottom: 0px;
+}
+
+.page-title-text-container p {
+    font-size: 110%;
+    max-width: 400px;
 }
 
 #title-animation {
