@@ -783,6 +783,7 @@ input[type=submit] {
     font-weight: 700;
     border: 1px solid rgb(7, 1, 20, 0.8);
     border-radius: 5px;
+    cursor: pointer;
  }
 
  input[type=submit]:hover {
