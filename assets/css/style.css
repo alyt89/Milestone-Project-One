@@ -93,7 +93,7 @@ header nav {
         height: 80px;
         padding-bottom: 5px;
     }
-    
+
 li {
     list-style-type: none;
     opacity: 0.8;
@@ -363,6 +363,7 @@ responsive layout for aim and history section */
         padding: 15px;
         height: 50%;
         margin-top: 5px;
+        line-height: 150%;
 
     }
     
@@ -380,14 +381,14 @@ responsive layout for aim and history section */
     }
 
     #aim p, #history p {
-        margin-top: 10px;
+        margin-top: 20px;
     
     }
 }
 
 @media screen and (max-width:450px) {
     #aim, #history {
-      padding: 15px;
+      padding: 5px;
       height: 50%;
       font-size: 95%;
     }
@@ -402,7 +403,7 @@ responsive layout for aim and history section */
 @media screen and (max-width:375px) {
     #aim, #history {
       line-height: 110%;
-      padding: 15px;
+      padding: 0px;
       height: 50%;
       font-size: 90%;
     }
@@ -410,6 +411,14 @@ responsive layout for aim and history section */
     #aim p, #history p {
         margin-top: 5px;
     
+    }
+
+    div:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    .section-text {
+        width: 95%;
     }
 }
 /* ski cross description section */
@@ -433,12 +442,13 @@ responsive layout for aim and history section */
     text-transform: uppercase;
     font-size: 250%;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .page-description p {
     font-weight: 700;
     font-size: 120%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -454,16 +464,12 @@ responsive layout for aim and history section */
 }
 
 
-
-
 .visual-link-background-image {
 
     object-fit: cover;
     height: 300px;
     width: 300px;
-
 }
-
 
 .visual-links-container {
     position: relative;
@@ -473,7 +479,6 @@ responsive layout for aim and history section */
     height: 300px;
     justify-content: space-around;
     filter: none;
-
 }
 
 .visual-links-item {
@@ -486,24 +491,20 @@ responsive layout for aim and history section */
     border: 2px solid white;
     width: 300px;
     height: 300px;
-
-
-
 }
 
 .grid-item-text {
     position: absolute;
     bottom: 0
- 
-
-}
+ }
 
 .grid-item-text h6 {
     padding: 20px;
     background: rgb(245, 245, 245, 0.85);
     color: black;
-    font-size: 100%;
-    font-weight: 600;
+    font-size: 105%;
+    font-weight: 700;
+    text-align: center;
 }
 
 .visual-links-item:hover {
