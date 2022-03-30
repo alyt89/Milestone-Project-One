@@ -821,3 +821,33 @@ input[type=submit] {
 
  form h5 {text-align: center;
 margin-top: 20px;}
+
+/* 
+signup form success landing page */
+
+#signup-success {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100%;
+}
+
+#signup-success * {
+text-align: center;
+font-style: italic;
+font-size: 160%;
+}
+
+#signup-success a {
+text-decoration: underline;
+text-decoration-thickness: 2px;
+}
+
+#return-to-homepage-link:hover {
+   transform: scale(1.02);
+    }
