@@ -275,7 +275,7 @@ Aim and history section */
 
 
 
-#aim-and-history-section, #events-details-section, #gallery-section, #signup-form-section {
+#aim-and-history-section, #events-details-section,  #signup-form-section {
     background: url('../images/skicrosshome2.jpeg');
     min-height: 600px;
     width: 100%;
@@ -315,12 +315,13 @@ Aim and history section */
 
 
 #aim, #history {
-    align-self: center;
+    align-self: flex-start;
     line-height: 175%;
     height: 40%;
     font-weight: 300;
     position: relative;
     padding: 15px 0;
+    margin-top: 50px;
     box-sizing: border-box;
 }
 
@@ -359,7 +360,8 @@ responsive layout for aim and history section */
     #aim, #history {
         padding: 15px;
         height: 50%;
-        align-self: flex-start;
+        margin-top: 5px;
+
     }
     
     #aim:before, #history:before {
@@ -367,9 +369,22 @@ responsive layout for aim and history section */
     }
 }
 
+@media screen and (max-width:700px) {
+    #aim, #history {
+      line-height: 135%;
+      padding: 15px;
+      height: 50%;
+      font-size: 100%;
+    }
+
+    #aim p, #history p {
+        margin-top: 10px;
+    
+    }
+}
+
 @media screen and (max-width:450px) {
     #aim, #history {
-      line-height: 120%;
       padding: 15px;
       height: 50%;
       font-size: 95%;
@@ -733,6 +748,8 @@ events page */
 
 
 
+
+
 /* Gallery page */
 
 #gallery-photos {
@@ -803,6 +820,19 @@ events page */
   .single-image-container:hover .hover-overlay {
     opacity: 1;
   }
+
+
+/* 
+responsive layout for gallery page */
+
+@media screen and (max-width:650px){
+    .gallery-content {
+        background: rgb(7, 1, 20, 0.6);
+    }
+
+}
+
+
 /* 
 sign up form */
 
