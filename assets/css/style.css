@@ -864,6 +864,26 @@ input[type=submit] {
 margin-top: 20px;}
 
 /* 
+responsive layout for sign up form page */
+
+
+@media screen and (max-width:550px){
+    form {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    form {
+        width: 300px;
+        padding: 5px;
+    }
+
+}
+
+
+/* 
 signup form success landing page */
 
 #signup-success {
