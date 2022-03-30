@@ -243,6 +243,33 @@ css animation for title animation from https://codepen.io/alvarotrigo/pen/ExvqdN
 }
 
 
+@media screen and (max-width:900px) {
+    .page-title-text-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #title-animation h2{
+        font-size: 200%;
+    }
+
+    #logo{
+        font-size: 150%;
+    }
+
+    #logo-nav-container li {
+        font-size: 90%;
+    }
+}
+
+
 /* 
 Aim and history section */
 
@@ -354,6 +381,20 @@ responsive layout for aim and history section */
     }
 }
 
+
+@media screen and (max-width:375px) {
+    #aim, #history {
+      line-height: 110%;
+      padding: 15px;
+      height: 50%;
+      font-size: 90%;
+    }
+
+    #aim p, #history p {
+        margin-top: 5px;
+    
+    }
+}
 /* ski cross description section */
 
 #skicross-description {
