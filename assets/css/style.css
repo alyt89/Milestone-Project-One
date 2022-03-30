@@ -709,6 +709,30 @@ events page */
 
 }
 
+@media screen and (max-width:700px){
+    #events-basics .events-basics-grid {
+       grid-template-rows: 1fr 1fr;
+       grid-template-columns: 1fr;
+        
+    }
+
+    .events-basics-grid div:nth-of-type(2) {
+        border-left: none;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .single-event-info {
+        min-width: 15em;
+        
+    }
+
+}
+
+
+
 /* Gallery page */
 
 #gallery-photos {
