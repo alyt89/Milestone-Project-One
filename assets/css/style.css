@@ -62,7 +62,7 @@ header h1 {
     align-self: flex-end;
 }
 
-nav a {
+nav li {
     align-self: flex-end;
 }
 
@@ -93,6 +93,7 @@ header nav {
         height: 80px;
         padding-bottom: 5px;
     }
+    
 li {
     list-style-type: none;
     opacity: 0.8;
@@ -109,12 +110,13 @@ nav a:hover {
     opacity: 1;
 }
 
-.active li {
+.active {
     opacity: 1;
-    color: white;
+    color:white;
     border-bottom: 1px solid whitesmoke;
 
 }
+
 
 
 .page-title-text-container  {
@@ -496,11 +498,11 @@ responsive layout for aim and history section */
 
 }
 
-.grid-item-text p {
+.grid-item-text h6 {
     padding: 20px;
     background: rgb(245, 245, 245, 0.85);
     color: black;
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 600;
 }
 
