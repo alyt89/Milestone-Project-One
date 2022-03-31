@@ -837,6 +837,16 @@ responsive layout for gallery page */
         background: rgb(7, 1, 20, 0.6);
     }
 
+    .single-image-container:active img {
+        opacity: 0.7;
+      }
+      
+      .single-image-container:active .hover-overlay {
+        opacity: 1;
+      }
+    
+
+
 }
 
 
