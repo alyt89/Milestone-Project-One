@@ -262,12 +262,12 @@ css animation for title animation from https://codepen.io/alvarotrigo/pen/ExvqdN
         font-size: 200%;
     }
 
-    #logo{
-        font-size: 150%;
+    #logo h1{
+        font-size: 200%;
     }
 
     #logo-nav-container li {
-        font-size: 90%;
+        font-size: 80%;
     }
 }
 
