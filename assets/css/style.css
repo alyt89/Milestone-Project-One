@@ -409,7 +409,7 @@ responsive layout for aim and history section */
     }
 
     #aim p, #history p {
-        margin-top: 5px;
+        margin-top: 10px;
     
     }
 
@@ -551,10 +551,12 @@ responsive design for visual links section */
     @media screen and (max-width:550px) {
         #visual-nav-links {
             height: 900px;
+            padding: 20px 10px;
         }
         
      .visual-links-container {
          flex-wrap: wrap;
+
      }   
     .visual-links-item {
         margin: 10px;
