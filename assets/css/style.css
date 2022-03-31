@@ -501,7 +501,7 @@ responsive layout for aim and history section */
 
 .grid-item-text h6 {
     padding: 20px;
-    background: rgb(245, 245, 245, 0.85);
+    background: rgb(245, 245, 245, 0.90);
     color: black;
     font-size: 105%;
     font-weight: 700;
@@ -551,6 +551,13 @@ responsive design for visual links section */
     .grid-item-text {
         background: rgb(245, 245, 245);
         font-weight: 800;
+        padding: 5px;
+    }
+
+    .grid-item-text h6 {
+        background: rgb(245, 245, 245);
+        font-weight: 800;
+        padding: 10px;
     }
 }
 
@@ -640,7 +647,7 @@ events page */
     border: 2px solid whitesmoke;
     border-radius: 20px;
     line-height: 1.8em;
-    background-color: rgb(45 44 46 / 80%);
+    background-color: rgb(45 44 46 / 90%);
     padding: 0.5em;
 }
 
@@ -803,6 +810,8 @@ events page */
     border-radius: 5px;
 }
 
+/* 
+hover overlay effect based on code provided on https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity  */
 
 .hover-overlay {
     transition: .5s ease;
@@ -850,8 +859,6 @@ responsive layout for gallery page */
         opacity: 1;
       }
     
-
-
 }
 
 
@@ -980,8 +987,13 @@ signup form success landing page */
     padding: 45px;
     margin: 0 auto;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 }
+
+.full-screen, #header-overlay.full-screen {
+    height: 100vh;
+}
+
 
 #signup-success * {
 text-align: center;

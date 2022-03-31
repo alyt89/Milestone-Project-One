@@ -59,6 +59,8 @@ The font used for headings was Josefin Sans and for other blocks of text was Jos
 
 ## Header and Navigation
 
+![Responsive screenshot](/assets/images/ski-cross-club-header-section.jpg)
+
 The header contains the site's name (Ski Cross Club) in the largest font to clearly indicate to site visitors the name of the site and is maintained across the 4 pages of the site for consistency. 
 
 The navigation bar section allows customers to navigate to the other pages on the site, the current page the user is on is shown by the underline styling.
@@ -74,23 +76,33 @@ On the Events, Gallery and Sign Up pages there is no animation applied but the p
 
 ## Aim and history section
 
+![Responsive screenshot](/assets/images/ski-cross-club-aim-history-section.jpg)
+
 This section is intended to give the user an idea of what to expect from Ski Cross Club and its current stature. The section reconfirms that it is intended for various levels of ability and age.
 
 The history is important to allow the user to know what to expect from the club as it is quite new and growing.
 
 The section maintains the same colour scheme and has a background image of a skier with their ski's in a cross formation.
 
+
+
 ## What is Ski Cross section
+
+![Responsive screenshot](/assets/images/ski-cross-club-what-is-ski-cross-section.jpg)
 
 This section is inteded to give those with less of a knowledge of winter sports and in particular skiing what the sport is and what it involves. The section aims not only to inform but encourage users to discover more and get involved.
 
 
 ## Visual navigation links
 
+![Responsive screenshot](/assets/images/ski-cross-club-visual-navigation-links.jpg)
+
 This section is inteded to reinforce the nav bar at the top of the page as this is not fixed so users would have to scroll up to find this otherwise.The images provide a further visual clue to what the page they are clicking on will contain. Each image has an effect when hovered over to come into focus before the user clicks.
 
 
 ## Footer
+
+![Responsive screenshot](/assets/images/ski-cross-club-footer.jpg)
 
 The footer is the same across the 4 pages of the website and contains links to the 3 social media platforms to find out more information.
 
@@ -98,11 +110,17 @@ The links have been coloured suitably as per the company's logo.
 
 ## Events page
 
-The events page contains 8 upcoming events to give users information about where, when and what the club is planning for the remainder of the year.
+![Responsive screenshot](/assets/images/ski-cross-club-aim-events.jpg)
+
+The events page contains 6 upcoming events to give users information about where, when and what the club is planning for the remainder of the year.
+
+The events are set out in a grid layout for consistent display.
 
 The events details section provides additional basic information that is applicable to all events the user would want to know before registering their interest in one of the events via the sign up form. This includes the equipment that is provided and information on how to register their interest.
 
 ## Sign up form
+
+![Responsive screenshot](/assets/images/ski-cross-club-aim-form.jpg)
 
 The form is intended to collect the basic information from the user where they can specify which events they are interested in.
 
@@ -141,3 +159,61 @@ Testing was done via Lighthouse and scored as below on Desktop and Mobile:
 ### Mobile:
 
 ![Responsive screenshot](/assets/images/ski-cross-club-lighthouse-mobile.jpg)
+
+
+The site has been tested on Google Chrome, FireFox and Microsoft Edge. It has also been tested on a mobile device to check the responsiveness.
+
+Throughout the development of the site I have used Google DevTools to ensure that the responsiveness is working and any bugs encountered are identified during development.
+
+All links both internal and external have been tested and any external links open in a new tab to maintain good user experience.
+
+## Main issues discovered and resolved
+
+1. Section overlay not matching image height
+
+- I wanted to darken the background images on the sections to allow the text to stand out clearly however by using absolute height values for the sections when the padding and margins were added the overlay would not match up. This was identified and adjusted so the sections did not overlap.
+
+2. Text overflowing section
+
+- Again due to the absolute px values given to sections some of the text overflowed the section when the screen size was reduced. Line height and font size were adjusted in the media queries to correct this.
+
+3. Conflicting CSS selectors
+
+- Through development I noticed that using the DevTools some of my styling were not being applied as being overriden by another class or id alreay updated in my CSS file which was of higher specificity. This was corrected by identifying any unnecessary or duplicated class/id and increasing specificity where needed.
+
+4. Error on redirect page for signup form
+
+- On submission of form I wanted the user to be redirected to a page confirming details were submitted correctly however this returned an error. On inspection through Slack forums I discovered that the method should remain as "GET" instead of "POST".
+
+
+
+
+# Deployment
+
+This project was hosted and deployed on GitHub, steps taken to deploy are as follows:
+
+- Open relevant GitHub repository and navigate to 'Settings' tab.
+
+- Navigate to 'Pages' option located in the 'Code and Automation' section 
+
+- Under 'Source' heading select the main branch and 'root' folder, once done click 'save'
+
+- Refresh page until the active URL is provided
+
+
+# Future site enhancements
+
+In time the site could have additional pages incorporated such as a member's directory and a forum to discuss topics and offer Ski Cross related equipment second hand.
+
+# Credits
+
+Through the development of this site I have used various resources to help me especially when applying the Grid and Flexbox principles, the guidance on https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template were particularly helpful for this.
+
+In addition I have used the W3Schools website to assist with general HTML and CSS queries such as Z-index and position.
+
+Specific credits are noted in the CSS file for animations on the home and gallery pages.
+
+## Images
+
+Images were sourced from a combination of https://unsplash.com/ and Google Images. As Ski Cross is quite a unique sport there were limited images for specific elements of Ski Cross that were required for the gallery page and therefore Google Images was required.
+
