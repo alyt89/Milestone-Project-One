@@ -547,6 +547,11 @@ responsive design for visual links section */
     #visual-nav-links {
         padding-bottom: 10px;
     }
+
+    .grid-item-text {
+        background: rgb(245, 245, 245);
+        font-weight: 800;
+    }
 }
 
     @media screen and (max-width:550px) {
