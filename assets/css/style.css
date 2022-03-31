@@ -406,6 +406,7 @@ responsive layout for aim and history section */
       padding: 0px;
       height: 50%;
       font-size: 90%;
+      margin-top: 15px;
     }
 
     #aim p, #history p {
@@ -413,7 +414,7 @@ responsive layout for aim and history section */
     
     }
 
-    div:nth-of-type(2) {
+   #history {
         margin-top: 20px;
     }
 
