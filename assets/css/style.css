@@ -921,6 +921,15 @@ input[type=submit] {
  form h5 {text-align: center;
 margin-top: 20px;}
 
+#get-in-touch div{
+    width: 85%;
+    margin: 20px auto;
+}
+
+#get-in-touch span {
+    text-decoration: underline;
+}
+
 /* 
 responsive layout for sign up form page */
 
