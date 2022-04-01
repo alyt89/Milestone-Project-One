@@ -762,12 +762,7 @@ events page */
         min-width: 15em;
         
     }
-
 }
-
-
-
-
 
 /* Gallery page */
 
@@ -777,9 +772,9 @@ events page */
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-  height: 100%;
-  position: relative;
-  z-index: 2;
+    height: 100%;
+    position: relative;
+    z-index: 2;
 }
 .gallery-content {
     display:flex;

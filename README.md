@@ -95,7 +95,7 @@ This section is inteded to give those with less of a knowledge of winter sports 
 
 ## Visual navigation links
 
-![Responsive screenshot](/assets/images/ski-cross-club-visual-navigation-links.jpg)
+![Responsive screenshot](/assets/images/visual-navigation-links.jpg)
 
 This section is inteded to reinforce the nav bar at the top of the page as this is not fixed so users would have to scroll up to find this otherwise.The images provide a further visual clue to what the page they are clicking on will contain. Each image has an effect when hovered over to come into focus before the user clicks.
 
@@ -104,9 +104,9 @@ This section is inteded to reinforce the nav bar at the top of the page as this 
 
 ![Responsive screenshot](/assets/images/ski-cross-club-footer.jpg)
 
-The footer is the same across the 4 pages of the website and contains links to the 3 social media platforms to find out more information.
+The footer is consistent across the 4 pages of the website and contains links to the 3 social media platforms to find out more information on the relevant platforms.
 
-The links have been coloured suitably as per the company's logo.
+The links have been coloured suitably as per the company's logo and animate on hover to show the user they are about to select the link.
 
 ## Events page
 
@@ -116,7 +116,7 @@ The events page contains 6 upcoming events to give users information about where
 
 The events are set out in a grid layout for consistent display.
 
-The events details section provides additional basic information that is applicable to all events the user would want to know before registering their interest in one of the events via the sign up form. This includes the equipment that is provided and information on how to register their interest.
+The events details section below it provides additional basic information that is applicable to all events the user would want to know before registering their interest in one of the events via the sign up form. This includes the equipment that is provided and information on how to register their interest.
 
 ## Sign up form
 
@@ -165,7 +165,11 @@ The site has been tested on Google Chrome, FireFox and Microsoft Edge. It has al
 
 Throughout the development of the site I have used Google DevTools to ensure that the responsiveness is working and any bugs encountered are identified during development.
 
+There have been regular commits to github with clear remarks on each update to easily track progress of the project.
+
 All links both internal and external have been tested and any external links open in a new tab to maintain good user experience.
+
+The site has also been tested by an impartial user to test for intuitiveness, ease of use and layout/visibility issues. One issue raised from this was the text contrast on one of the visual links and this was subsequently resolved by increasing opacity/constrast.
 
 ## Main issues discovered and resolved
 
@@ -185,6 +189,9 @@ All links both internal and external have been tested and any external links ope
 
 - On submission of form I wanted the user to be redirected to a page confirming details were submitted correctly however this returned an error. On inspection through Slack forums I discovered that the method should remain as "GET" instead of "POST".
 
+5. Images for Visual Navigation Links not working when site deployed
+
+- I noticed the images on the index.html page providing links to the other pages were not displaying, when these were adjusted to relative file paths instead of absolute file paths the problem was resolved.
 
 
 
